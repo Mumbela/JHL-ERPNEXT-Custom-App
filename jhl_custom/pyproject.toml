@@ -4,7 +4,7 @@ authors = [
     { name = "Judibela Holdings Limited", email = "judibela.holdings@gmail.com"}
 ]
 description = "Judibela Holdings Limited ERPNext customizations"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
