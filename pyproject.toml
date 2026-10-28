@@ -5,7 +5,7 @@ authors = [
 ]
 description = "Judibela Holdings Limited ERPNext customizations"
 requires-python = ">=3.10"
-readme = "jhl_custom/README.md"
+readme = "README.md"
 dynamic = ["version"]
 dependencies = [
     # "frappe~=16.0.0" # Installed and managed by bench.
@@ -16,14 +16,13 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-package-dir = {"jhl_custom" = "jhl_custom/jhl_custom"}
 include-package-data = true
 
 [tool.setuptools.dynamic]
 version = {attr = "jhl_custom.__version__"}
 
 [tool.setuptools.packages.find]
-where = ["jhl_custom"]
+where = ["."]
 
 [tool.setuptools.package-data]
 jhl_custom = ["**/*.json", "**/*.txt", "**/*.md"]
