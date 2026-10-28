@@ -4,9 +4,9 @@ Judibela Holdings Limited ERPNext customizations
 
 ### Installation
 
-The repository root contains a small `setup.py` compatibility entry point for
-Bench versions that still require one. The Python app package and its project
-metadata remain in `jhl_custom/`.
+The repository root contains the packaging metadata used by Bench and `uv`,
+plus a small `setup.py` compatibility entry point for older Bench versions.
+The Python app source remains in `jhl_custom/`.
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
@@ -30,7 +30,7 @@ bench migrate
 
 Keep the app version in `jhl_custom/__init__.py`; the root `setup.py` reads it
 when Bench installs the package. Declare any runtime Python dependencies in
-the root `setup.py` so Bench installs them with the app.
+the root `pyproject.toml` so Bench installs them with the app.
 
 ### Contributing
 
